@@ -5,21 +5,21 @@ const pets =[{
     name: 'Mikey',
     color: 'Color: White',
     skill: 'Special skill: I love to play fetch!',
-    type: 'Type: Dog'
+    type: 'Type--Dog'
 },
 {
     image: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Beagle_puppy_sitting_on_grass.jpg',
     name: 'Ludwig',
     color: 'Color: Black and white mix',
     skill: 'Special skill: I can sniff out anything!',
-    type: 'Type: Dog'
+    type: 'Type--Dog'
 },
 {
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/June_odd-eyed-cat.jpg/1474px-June_odd-eyed-cat.jpg',
     name: 'Marilyn',
     color: 'Color: White',
     skill: 'Special skill: Snuggling',
-    type:  'Type: Cat'
+    type:  'Type--Cat'
 
 },
 {
@@ -27,21 +27,21 @@ const pets =[{
     name: 'Sylvester',
     color: 'Color: Black and white',
     skill: 'Special skill: I love catching mice',
-    type: 'Type: Cat'
+    type: 'Type--Cat'
 },
 {
     image: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Dennis_the_pet_pig_sings%2C_cropped_version.jpg',
     name: 'Dennis',
     color: 'Color: Pink',
     skill: 'Special skill: I love to sing!',
-    type: 'Type: Miniature pig'
+    type: 'Type--Pig'
 },
 {
     image: 'https://upload.wikimedia.org/wikipedia/commons/2/26/Itchy_piglet.jpg',
     name: 'Buster',
     color: 'Color: Black and white',
     skill: 'Special skill: Chasing my tail',
-    type: 'Type: Miniature pig'
+    type: 'Type--Pig'
 }]
 
 const printToDom = (toPrint, divId) => {
@@ -69,3 +69,22 @@ const petCard = (petArr) => {
 }
 
 petCard(pets)
+
+const buttonClick = (event) => {
+    const petType = event.target.id;
+    const selectedPet = [];
+    for (let i = 0; i < pets.length; i++) {
+        const pet = pets[i];
+        if (pet.type === petType) {
+            selectedPet.push(pet)
+        }
+    }
+    petCard(selectedPet);
+}
+
+document.getElementById('Type--Dog').addEventListener('click', buttonClick);
+document.getElementById('Type--Cat').addEventListener('click', buttonClick);
+document.getElementById('Type--Pig').addEventListener('click', buttonClick);
+document.getElementById('all-pets').addEventListener('click', () => {
+    petCard(pets)
+});

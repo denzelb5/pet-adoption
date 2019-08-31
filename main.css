@@ -21,6 +21,29 @@ button {
     border: 2px solid #BDBDBD;
     font-size: 15px;
     box-shadow: 3px 3px;
+    cursor: pointer;
+}
+
+#Type--Dog {
+    background-color: #E64A19;
+    color: whitesmoke;
+}
+
+#Type--Cat {
+    background-color: #d2c0c3;
+    color: #E64A19;
+    border-color: whitesmoke;
+}
+
+#Type--Pig {
+    background-color: #FFCCBC;
+    color: #E64A19;
+    border-color: whitesmoke;
+}
+
+#all-pets {
+    background-color: #348cb7;
+    color: whitesmoke;
 }
 
 #petCard {
