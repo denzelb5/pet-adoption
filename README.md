@@ -7,13 +7,13 @@ HTML, CSS, Javascript
 A pet adoption site.  There are 4 buttons in the header, each filtering the different types of animals.
 
 ## Screenshots
-![screenshot-1](./screenshots/pets-1.png)
+![screenshot-1](https://github.com/denzelb5/pet-adoption/blob/master/screenshots/pets-1.png?raw=true)
 
-![screenshot-2](./screenshots/pets-2.png)
+![screenshot-2](https://github.com/denzelb5/pet-adoption/blob/master/screenshots/pets-2.png?raw=true)
 
-![screenshot-3](./screenshots/pets-3.png)
+![screenshot-3](https://github.com/denzelb5/pet-adoption/blob/master/screenshots/pets-3.png?raw=true)
 
-![screenshot-4](./screenshots/pets-4.png)
+![screenshot-4](https://github.com/denzelb5/pet-adoption/blob/master/screenshots/pets-4.png?raw=true)
 
 ## How to run
 * Clone down this project
